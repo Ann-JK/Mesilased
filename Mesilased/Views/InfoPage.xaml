@@ -16,14 +16,25 @@
         <VerticalStackLayout Spacing="20">
             <Grid Grid.Row="1"
                   Margin="20">
-                <Label>
+                <Label HorizontalTextAlignment="Center">
                     <Label.Text>
                         See rakendus on järgnevate tarkvaraarendajate koostööprojekt:
+                        
                         Ivo Priilinn
                         Viljar Norman
                         Annabel Jakubel
+                        
+                        Loodud:
+                        2023 detsember
                     </Label.Text>
                 </Label>
+            </Grid>
+
+            <Grid Grid.Row="2"
+                  Margin="20">
+                <Button>
+                    <!--TODO-->
+                </Button>
             </Grid>
 
         </VerticalStackLayout>
