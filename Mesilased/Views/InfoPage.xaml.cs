@@ -1,9 +1,9 @@
 namespace Mesilased.Views;
 
-public partial class InfoView : ContentView
+public partial class InfoPage : ContentPage
 {
-	public InfoView()
+	public InfoPage()
 	{
-		InitializeComponent();
+        InitializeComponent();
 	}
 }

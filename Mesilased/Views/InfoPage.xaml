@@ -12,6 +12,21 @@
         <Grid.GestureRecognizers>
             <TapGestureRecognizer Tapped="GridArea_Tapped" />
         </Grid.GestureRecognizers>
+
+        <VerticalStackLayout Spacing="20">
+            <Grid Grid.Row="1"
+                  Margin="20">
+                <Label>
+                    <Label.Text>
+                        See rakendus on järgnevate tarkvaraarendajate koostööprojekt:
+                        Ivo Priilinn
+                        Viljar Norman
+                        Annabel Jakubel
+                    </Label.Text>
+                </Label>
+            </Grid>
+
+        </VerticalStackLayout>
     </Grid>
     
 </ContentPage>
