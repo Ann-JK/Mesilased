@@ -6,4 +6,9 @@ public partial class InfoPage : ContentPage
 	{
         InitializeComponent();
 	}
+
+	async void GridArea_Tapped(System.Object sender, System.EventArgs e) 
+	{ 
+	
+	}
 }
