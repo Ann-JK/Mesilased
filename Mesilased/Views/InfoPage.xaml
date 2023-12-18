@@ -3,34 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mesilased.Views.InfoPage"
              Title="Information">
+    <ContentPage.BackgroundColor>
+        <Color>#FFFFFF</Color>
+        <!-- Use your preferred color code -->
+    </ContentPage.BackgroundColor>
 
     <Grid>
-        <Grid.Background>
-            <!--TODO-->
-        </Grid.Background>
-        
         <Grid.GestureRecognizers>
             <TapGestureRecognizer Tapped="GridArea_Tapped" />
         </Grid.GestureRecognizers>
 
-        <VerticalStackLayout Spacing="20">
+        <VerticalStackLayout Spacing="20" Padding="30">
             <Grid Grid.Row="1"
-                  Margin="20">
-                <Label HorizontalTextAlignment="Center">
+                  Margin="5">
+                <Label HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}">
                     <Label.Text>
-                        See rakendus on järgnevate tarkvaraarendajate koostööprojekt:
-                        
-                        Ivo Priilinn
-                        Viljar Norman
-                        Annabel Jakubel
-                        
-                        Loodud:
-                        2023 detsember
+                        See projekt on loodud koostöös järgnevate arendajate poolt:
                     </Label.Text>
                 </Label>
             </Grid>
 
-            <Grid Grid.Row="2"
+            <StackLayout Grid.Row="2"
+                  Margin="5"
+                  VerticalOptions="CenterAndExpand">
+                <Label Text="Viljar Norman" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
+                <Label Text="Ivo Priilinn" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
+                <Label Text="Annabel Jakubel" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
+            </StackLayout>
+            
+            <Grid Grid.Row="3"
+                  Margin="10">
+                <Label HorizontalOptions="Center" TextColor="{StaticResource Gray500}">
+                    <Label.Text>
+                        "Mesilased" loodud 2023 detsember
+                    </Label.Text>
+                </Label>
+            </Grid>
+
+            <Grid Grid.Row="4"
                   Margin="20">
                 <Button>
                     <!--TODO-->
