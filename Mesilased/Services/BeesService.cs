@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Mesilased.Services
 {
-    internal class BeesService
+    internal static class BeesService
     {
         private static List<Bees> bees = new()
         {
