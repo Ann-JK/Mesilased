@@ -10,6 +10,7 @@ namespace Mesilased.Models
     {
             public string Name { get; set; }
             public string ScientificName { get; set; }
+            public string HeroImage { get; set; }
             public string Description { get; set; }
             public List<string> Images { get; set; }
     }
