@@ -2,21 +2,25 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mesilased.Views.InfoPage"
-             Title="Information">
+             Title="Informatsioon">
     <ContentPage.BackgroundColor>
-        <Color>#FFFFFF</Color>
-        <!-- Use your preferred color code -->
+        <Color>#e9cec8</Color>
     </ContentPage.BackgroundColor>
 
-    <Grid>
+    <Grid Margin="10, 30, 10, 0"
+          VerticalOptions="FillAndExpand"
+          BackgroundColor="#FFFFFF">
         <Grid.GestureRecognizers>
             <TapGestureRecognizer Tapped="GridArea_Tapped" />
         </Grid.GestureRecognizers>
 
-        <VerticalStackLayout Spacing="20" Padding="30">
+        <VerticalStackLayout Spacing="20" 
+                             Padding="30">
             <Grid Grid.Row="1"
                   Margin="5">
-                <Label HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}">
+                <Label HorizontalTextAlignment="Center" 
+                       TextColor="{StaticResource Gray500}"
+                       FontAttributes="Bold">
                     <Label.Text>
                         See projekt on loodud koostöös järgnevate arendajate poolt:
                     </Label.Text>
@@ -29,25 +33,41 @@
                 <Label Text="Viljar Norman" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
                 <Label Text="Ivo Priilinn" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
                 <Label Text="Annabel Jakubel" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
+                <Label Text="Marcus Villems" HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}"/>
             </StackLayout>
-            
-            <Grid Grid.Row="3"
-                  Margin="10">
-                <Label HorizontalOptions="Center" TextColor="{StaticResource Gray500}">
+
+            <StackLayout Grid.Row="4"
+                  Margin="0, 5, 0, 0"
+                  VerticalOptions="End">
+                <Label HorizontalTextAlignment="Center" TextColor="{StaticResource Gray500}">
                     <Label.Text>
-                        "Mesilased" loodud 2023 detsember
+                        Toeta meid!
                     </Label.Text>
                 </Label>
-            </Grid>
-
-            <Grid Grid.Row="4"
-                  Margin="20">
-                <Button>
-                    <!--TODO-->
+                <Button 
+                    Margin="0, 5, 0, 0"
+                    BackgroundColor="ForestGreen" 
+                    TextColor="AntiqueWhite"
+                    FontAttributes="Bold"
+                    BorderColor="DarkGreen"
+                    CornerRadius="20">
+                    <Button.Text>
+                        Patreon
+                    </Button.Text>
                 </Button>
-            </Grid>
-
+            </StackLayout>
         </VerticalStackLayout>
+
+        <StackLayout Grid.Row="5"
+              BackgroundColor="{StaticResource Gray500}"
+              VerticalOptions="EndAndExpand"
+              Padding="0, 30">
+            <Label HorizontalOptions="Center" TextColor="White" FontAttributes="Bold">
+                <Label.Text>
+                    "Mesilased" loodud 2023 detsember
+                </Label.Text>
+            </Label>
+        </StackLayout>
     </Grid>
     
 </ContentPage>
