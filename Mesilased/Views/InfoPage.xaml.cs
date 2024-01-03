@@ -11,4 +11,10 @@ public partial class InfoPage : ContentPage
 	{ 
 	
 	}
+
+	async void Patreon_Clicked(System.Object sender, System.EventArgs e)
+	{
+		Launcher.OpenAsync(new Uri("http://www.patreon.com"));
+	}
+	
 }

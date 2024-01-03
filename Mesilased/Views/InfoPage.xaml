@@ -50,7 +50,8 @@
                     TextColor="AntiqueWhite"
                     FontAttributes="Bold"
                     BorderColor="DarkGreen"
-                    CornerRadius="20">
+                    CornerRadius="20"
+                    Clicked="Patreon_Clicked">
                     <Button.Text>
                         Patreon
                     </Button.Text>
