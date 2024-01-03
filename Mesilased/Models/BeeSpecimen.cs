@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace Mesilased.Models
 {
-    internal class BeeSpecimen
+    public class BeeSpecimen
     {
+        public string Name { get; set; }
+        public string HeroImage { get; set; }
+        public string Description { get; set; }
+
+
+        public Brush Background { get; set; }
+
     }
+
+
 }

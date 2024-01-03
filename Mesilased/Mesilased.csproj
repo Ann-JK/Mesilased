@@ -49,6 +49,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\emamesilane.png" />
+	  <None Remove="Resources\Images\emamesilane_ikoon.png" />
+	  <None Remove="Resources\Images\lesk.png" />
+	  <None Remove="Resources\Images\lesk_ikoon.png" />
+	  <None Remove="Resources\Images\t66mesilane.png" />
+	  <None Remove="Resources\Images\t66mesilane2.png" />
+	  <None Remove="Resources\Images\t66mesilane3.png" />
+	  <None Remove="Resources\Images\t66mesilane_ikoon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <MauiXaml Update="Views\BeeSpecimenDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
