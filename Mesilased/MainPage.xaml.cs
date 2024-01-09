@@ -1,4 +1,6 @@
-﻿namespace Mesilased;
+﻿using Mesilased.Views;
+
+namespace Mesilased;
 
 public partial class MainPage : ContentPage
 {
@@ -11,14 +13,27 @@ public partial class MainPage : ContentPage
 
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
-		count++;
+        //count++;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+        //if (count == 1)
+        //	nupp1.text = $"clicked {count} time";
+        //else
+        //	nupp1.text = $"clicked {count} times";
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+        //semanticscreenreader.announce(nupp1.text);
+        
+        //async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+    //=> Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+        
+        //async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+   //=> Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+        
+        //async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
+    //=> Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+    }
+    private void Nupp3Clicked(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new NavigationPage(new FactPage());
+    }
 }
 

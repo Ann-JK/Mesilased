@@ -49,9 +49,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
-	  <Folder Include="Views\" />
-	  <Folder Include="Services\" />
+	  <MauiXaml Update="Views\FactPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

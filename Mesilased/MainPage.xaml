@@ -9,11 +9,11 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-            <Image
+            <!--<Image
                 Source="dotnet_bot.png"
                 SemanticProperties.Description="Cute dot net bot waving hi to you!"
                 HeightRequest="200"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" /> 
 
             <Label
                 Text="Hello, World!"
@@ -26,13 +26,24 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center" />-->
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
+                x:Name="Nupp1"
+                Text="Mesilaste liigid Eestis"
                 Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="Nupp2"
+                Text="Mesilaste rollid"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+            
+            <Button
+                x:Name="Nupp3"
+                Text="Huvitav fakt"
+                Clicked="Nupp3Clicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
