@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mesilased.Views.BeesPage"
+             xmlns:models="clr-namespace:Mesilased.Models"
+             Title="Bees page">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="2,1">
+                <GradientStop Color="#F9B405" Offset="0.0" />
+                <GradientStop Color="#FFf" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+
+        <VerticalStackLayout
+            Margin="0,52,24,0"
+            HorizontalOptions="End"
+            Spacing="20">
+
+        </VerticalStackLayout>
+
+
+        <Grid
+            x:Name="MainContentGrid"
+            Padding="24,52,24,0"
+            ColumnDefinitions="*"
+            RowDefinitions="Auto,*">
+
+            <!--Header text-->
+            <VerticalStackLayout
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="Center"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="Eesti imelised mesilased"
+                    FontSize="40"/>
+
+            </VerticalStackLayout>
+
+            <FlexLayout
+                    Direction="Row"
+                    JustifyContent="SpaceBetween"
+                    AlignItems="Start"
+                    Wrap="Wrap"
+                    Grid.Row="1"
+                    Grid.Column="0">
+
+                <!-- Left Column -->
+                <CollectionView
+                        ItemsSource="{Binding BeesCollectionLeft}"
+                        SelectionMode="Single"
+                        SelectionChanged="Bees_SelectionChanged"
+                        HeightRequest="3000"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FlexLayout.Basis="48%" 
+                        Margin="0,0,5,0"
+                        FlexLayout.Grow="1">
+
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                                Orientation="Vertical"
+                                ItemSpacing="16" />
+                    </CollectionView.ItemsLayout>
+
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate
+                                x:DataType="models:Bees">
+                            <Border
+                                    VerticalOptions="Fill"
+                                    WidthRequest="250"
+                                    StrokeThickness="0"
+                                    Padding="0">
+    
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="150" />
+                                </Border.StrokeShape>
+
+                                <Grid
+                                        RowDefinitions="*, Auto"
+                                        RowSpacing="1" >
+                                    <Frame
+                                        Grid.Row="0"
+                                        BackgroundColor="Black"
+                                        CornerRadius="75"
+                                        HeightRequest="150"
+                                        WidthRequest="150"
+                                        Padding="0" >
+
+                                        <Image 
+                                            Source="{Binding HeroImage}"
+                                            Aspect="AspectFill"
+                                            VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="CenterAndExpand" />
+
+                                    </Frame>
+
+                                    <Label
+                                            Grid.Row="1"
+                                            Text="{Binding Name}"
+                                            HorizontalTextAlignment="Center"
+                                            VerticalTextAlignment="Center" />
+
+                                </Grid>
+
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+                <!---Right Column-->
+
+                <CollectionView
+                        ItemsSource="{Binding BeesCollectionRight}"
+                        SelectionMode="Single"
+                        SelectionChanged="Bees_SelectionChanged"
+                        HeightRequest="3000"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        FlexLayout.Basis="48%"
+                        Margin="5,0,0,0">
+
+
+                    <CollectionView.ItemsLayout>
+                        <LinearItemsLayout
+                                    Orientation="Vertical"
+                                    ItemSpacing="16" />
+                    </CollectionView.ItemsLayout>
+
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate
+                                    x:DataType="models:Bees">
+                            <Border
+                                VerticalOptions="Fill"
+                                WidthRequest="250"
+                                StrokeThickness="0"
+                                Padding="0">
+
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="150" />
+                                </Border.StrokeShape>
+
+                                <Grid
+                                    RowDefinitions="*, Auto"
+                                    RowSpacing="1" >
+
+                                    <Frame
+                                        Grid.Row="0"
+                                        BackgroundColor="Black"
+                                        CornerRadius="75"
+                                        HeightRequest="150"
+                                        WidthRequest="150"
+                                        Padding="0">
+                                        <Image 
+                                            Source="{Binding HeroImage}"
+                                            Rotation="0"
+                                            Aspect="AspectFill"
+                                            VerticalOptions="CenterAndExpand"
+                                            HorizontalOptions="CenterAndExpand" />
+
+                                    </Frame>
+
+                                    <Label
+                                        Grid.Row="1"
+                                        Text="{Binding Name}"
+                                        HorizontalTextAlignment="Center"
+                                        VerticalTextAlignment="Center"/>
+                                </Grid>
+
+                            </Border>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+
+                </CollectionView>
+            </FlexLayout>
+
+        </Grid>
+
+    </Grid>
+</ContentPage>
