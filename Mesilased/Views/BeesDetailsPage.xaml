@@ -45,10 +45,10 @@
             <VerticalStackLayout
                 Spacing="18">
 
-                <!--Planet image-->
+                <!--Bees image-->
                 <Frame
                     Grid.Row="0"
-                    BackgroundColor="LightGray"
+                    BackgroundColor="Black"
                     CornerRadius="75"
                     HeightRequest="150"
                     WidthRequest="150"
@@ -62,29 +62,27 @@
 
                 </Frame>
 
-                <!--Planet label-->
+                <!--Bees label-->
                 <Label
                     Margin="0,-24,0,0"
-                    Style="{StaticResource AllPlanetHeaderSubtitleStyle}"
                     Text="{Binding Name}"/>
 
-                <!--Planet subtitle-->
+                <!--Bees scientificname-->
                 <Label
                     Margin="0,-12,0,0"
-                    Style="{StaticResource PlanetHeaderSubtitleStyle}"
-                    Text="{Binding Subtitle}"/>
+                    Style="{StaticResource HeaderSubtitleStyle}"
+                    Text="{Binding ScientificName}"/>
 
                 <!--Divider-->
                 <Rectangle
                     HorizontalOptions="Fill"
                     HeightRequest="2"
                     Stroke="Transparent"
-                    Fill="{StaticResource LightBorderColor}"/>
+                    Fill="white"/>
 
-                <!--Planet info-->
+                <!--Bee info-->
                 <Label
                     LineBreakMode="WordWrap"
-                    Style="{StaticResource PlanetDetailsTextStyle}"
                     Text="{Binding Description}"/>
 
                 <!--Divider-->
@@ -92,12 +90,9 @@
                     HorizontalOptions="Fill"
                     HeightRequest="2"
                     Stroke="Transparent"
-                    Fill="{StaticResource LightBorderColor}"/>
+                    Fill="white"/>
 
-                <!--Planet images-->
-                <Label
-                    Style="{StaticResource PlanetHeaderSubtitleStyle}"
-                    Text="Gallery"/>
+                <!--Bee images-->
 
                 <CollectionView
                     Margin="0,-6,0,0"

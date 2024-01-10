@@ -6,41 +6,25 @@
              Title="Bees page">
     <Grid>
 
-        <!--Menu-->
-        <Grid
-            x:Name="MenuContainer">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="2,1">
+                <GradientStop Color="#F9B405" Offset="0.0" />
+                <GradientStop Color="#FFf" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
 
-            <Grid.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="2,1">
-                    <GradientStop Color="#F9B405" Offset="0.0" />
-                    <GradientStop Color="#FFf" Offset="1.0" />
-                </LinearGradientBrush>
-            </Grid.Background>
 
-            <Grid.GestureRecognizers>
-                <TapGestureRecognizer Tapped="GridArea_Tapped" />
-            </Grid.GestureRecognizers>
+        <VerticalStackLayout
+            Margin="0,52,24,0"
+            HorizontalOptions="End"
+            Spacing="20">
 
-            <VerticalStackLayout
-                Margin="0,52,24,0"
-                HorizontalOptions="End"
-                Spacing="20">
+        </VerticalStackLayout>
 
-                <Label
-                    Text="MENU"
-                    Style="{StaticResource PageHeaderStyle}"
-                    HorizontalOptions="End" />
-
-            </VerticalStackLayout>
-
-        </Grid>
-
-        <!--Main Content-->
 
         <Grid
             x:Name="MainContentGrid"
             Padding="24,52,24,0"
-            BackgroundColor="{StaticResource PageBackgroundColor}"
             ColumnDefinitions="*"
             RowDefinitions="Auto,*">
 
@@ -52,15 +36,10 @@
                 HorizontalOptions="Center">
 
                 <Label
-                    Style="{StaticResource PageHeaderStyle}"
                     Text="Eesti imelised mesilased"
                     FontSize="40"/>
 
             </VerticalStackLayout>
-
-
-            <!--main content-->
-
 
             <FlexLayout
                     Direction="Row"
@@ -108,7 +87,7 @@
                                         RowSpacing="1" >
                                     <Frame
                                         Grid.Row="0"
-                                        BackgroundColor="LightGray"
+                                        BackgroundColor="Black"
                                         CornerRadius="75"
                                         HeightRequest="150"
                                         WidthRequest="150"
@@ -173,7 +152,7 @@
 
                                     <Frame
                                         Grid.Row="0"
-                                        BackgroundColor="LightGray"
+                                        BackgroundColor="Black"
                                         CornerRadius="75"
                                         HeightRequest="150"
                                         WidthRequest="150"
