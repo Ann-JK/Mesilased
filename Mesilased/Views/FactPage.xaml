@@ -3,20 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mesilased.Views.FactPage"
              Title="FactPage">
-    <VerticalStackLayout Padding="30">
+    <VerticalStackLayout Padding="30" BackgroundColor="Orange">
         <Label FontSize="40"
             Text="Huvitavad faktid mesilaste kohta"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Label x:Name="label2"
-               FontSize="20"
-               Text="{Binding randomFact}"/>
-
         <Button
                 x:Name="Nupp"
                 Text="Tagasi esilehele"
                 Clicked="Esileht"
                 HorizontalOptions="Center" />
+        <Label x:Name="label2"
+               Padding="0,60,0,0"
+               FontSize="15"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               Text="{Binding randomFact}"/>
         <!--<Label FontSize="20"
                Text="{Binding RandomFact}"/>
         <Label FontSize="15"
