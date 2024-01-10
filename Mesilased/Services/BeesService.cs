@@ -11,11 +11,12 @@ namespace Mesilased.Services
     {
         private static List<Bees> bees = new()
         {
+
             new()
             {
                 Name = "Meemesilane",
                 ScientificName = "Apis Mellifera",
-                HeroImage = "",
+                HeroImage = "apis.jpg",
                 Description = "",
             },
 
@@ -23,23 +24,23 @@ namespace Mesilased.Services
             {
                 Name = "Müürimesilane",
                 ScientificName = "Osmia spp.",
-                HeroImage = "",
+                HeroImage = "osmia.jpg",
                 Description = "",
             },
 
             new()
             {
-                Name = "Lehemesilane",
+                Name = "Hiidmesilane",
                 ScientificName = "Megachile spp.",
-                HeroImage = "",
+                HeroImage = "megachile.jpg",
                 Description = "",
             },
 
             new()
             {
-                Name = "Lehemesilane",
+                Name = "Liivamesilane",
                 ScientificName = "Andrena spp.",
-                HeroImage = "",
+                HeroImage = "andrena.jpg",
                 Description = "",
             },
 
@@ -47,7 +48,7 @@ namespace Mesilased.Services
             {
                 Name = "Lehemesilane",
                 ScientificName = "Lasioglossum spp.",
-                HeroImage = "",
+                HeroImage = "lasio.jpg",
                 Description = "",
             },
 
@@ -55,7 +56,7 @@ namespace Mesilased.Services
             {
                 Name = "Lehemesilane",
                 ScientificName = "Halictus spp.",
-                HeroImage = "",
+                HeroImage = "halictus.jpg",
                 Description = "",
             },
 
@@ -63,7 +64,7 @@ namespace Mesilased.Services
             {
                 Name = "Lehemesilane",
                 ScientificName = "Hylaeus spp.",
-                HeroImage = "",
+                HeroImage = "hylaeus.jpg",
                 Description = "",
             },
 
@@ -71,7 +72,7 @@ namespace Mesilased.Services
             {
                 Name = "Lehemesilane",
                 ScientificName = "Melitta spp.",
-                HeroImage = "",
+                HeroImage = "melitta.jpg",
                 Description = "",
             },
         };
