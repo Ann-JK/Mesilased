@@ -13,9 +13,14 @@ public partial class FactPage : ContentPage
 	}
 
 
-    public FactPage()
+	public FactPage()
 	{
 		InitializeComponent();
 		BindingContext = this;
 	}
+
+    private void Esileht(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new NavigationPage(new MainPage());
+    }
 }

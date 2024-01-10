@@ -31,13 +31,13 @@
             <Button
                 x:Name="Nupp1"
                 Text="Mesilaste liigid Eestis"
-                Clicked="OnCounterClicked"
+                Clicked="Nupp1Clicked"
                 HorizontalOptions="Center" />
             
             <Button
                 x:Name="Nupp2"
                 Text="Mesilaste rollid"
-                Clicked="OnCounterClicked"
+                Clicked="Nupp2Clicked"
                 HorizontalOptions="Center" />
             
             <Button

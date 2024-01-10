@@ -11,7 +11,7 @@ public partial class MainPage : ContentPage
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	private void ButtonClicked(object sender, EventArgs e)
 	{
         //count++;
 
@@ -30,6 +30,14 @@ public partial class MainPage : ContentPage
         
         //async void ExploreNow_Clicked(System.Object sender, System.EventArgs e)
     //=> Application.Current.MainPage = new NavigationPage(new PlanetsPage());
+    }
+    private void Nupp1Clicked(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new NavigationPage(new FactPage());
+    }
+    private void Nupp2Clicked(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new NavigationPage(new FactPage());
     }
     private void Nupp3Clicked(object sender, EventArgs e)
     {
