@@ -16,8 +16,8 @@
             RowDefinitions="Auto,*">
 
         <ImageButton
-                WidthRequest="40"
-                HeightRequest="40"
+                WidthRequest="60"
+                HeightRequest="60"
                 Source="imgback.png"
                 Grid.Row="0"
                 HorizontalOptions="Start"
