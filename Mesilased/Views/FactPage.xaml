@@ -3,25 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mesilased.Views.FactPage"
              Title="FactPage">
-    <VerticalStackLayout Padding="30" BackgroundColor="Orange">
-        <Label FontSize="40"
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="2,1">
+                <GradientStop Color="#F9B405" Offset="0.0" />
+                <GradientStop Color="#FFf" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VerticalStackLayout Padding="30" BackgroundColor="Orange">
+            <Label FontSize="40"
             Text="Huvitavad faktid mesilaste kohta"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        <Button
-                x:Name="Nupp"
-                Text="Tagasi esilehele"
-                Clicked="Esileht"
-                HorizontalOptions="Center" />
-        <Label x:Name="label2"
+            <ImageButton
+                WidthRequest="24"
+                HeightRequest="24"
+                Source="imgback.png"
+                Grid.Row="0"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Clicked="Esileht"/>
+            <Label x:Name="label2"
                Padding="0,60,0,0"
                FontSize="15"
                VerticalOptions="Center" 
                HorizontalOptions="Center"
                Text="{Binding randomFact}"/>
-        <!--<Label FontSize="20"
-               Text="{Binding RandomFact}"/>
-        <Label FontSize="15"
-               Text="{Binding Description}"/>-->
-    </VerticalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
 </ContentPage>

@@ -13,7 +13,6 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-
         <VerticalStackLayout
             Margin="0,52,24,0"
             HorizontalOptions="End"
@@ -27,6 +26,15 @@
             Padding="24,52,24,0"
             ColumnDefinitions="*"
             RowDefinitions="Auto,*">
+
+            <ImageButton
+                WidthRequest="24"
+                HeightRequest="24"
+                Source="imgback.png"
+                Grid.Row="0"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Clicked="Esileht"/>
 
             <!--Header text-->
             <VerticalStackLayout
