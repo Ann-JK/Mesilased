@@ -13,21 +13,28 @@
         </Grid.Background>
 
         <VerticalStackLayout Padding="30" BackgroundColor="Orange">
-            <Label FontSize="40"
-            Text="Huvitavad faktid mesilaste kohta"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+
             <ImageButton
-                WidthRequest="24"
-                HeightRequest="24"
+                WidthRequest="40"
+                HeightRequest="40"
                 Source="imgback.png"
                 Grid.Row="0"
                 HorizontalOptions="Start"
                 VerticalOptions="Center"
-                Clicked="Esileht"/>
+                Clicked="Esileht"
+                BorderColor="Brown"
+                BorderWidth="2"/>
+
+            <Label
+                Margin="60"
+                FontSize="60"
+                Text="HUVITAV FAKT MESILASTE KOHTA"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
             <Label x:Name="label2"
                Padding="0,60,0,0"
-               FontSize="15"
+               FontSize="30"
                VerticalOptions="Center" 
                HorizontalOptions="Center"
                Text="{Binding randomFact}"/>

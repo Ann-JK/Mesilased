@@ -28,13 +28,15 @@
             RowDefinitions="Auto,*">
 
             <ImageButton
-                WidthRequest="24"
-                HeightRequest="24"
+                WidthRequest="40"
+                HeightRequest="40"
                 Source="imgback.png"
                 Grid.Row="0"
                 HorizontalOptions="Start"
                 VerticalOptions="Center"
-                Clicked="Esileht"/>
+                Clicked="Esileht"
+                BorderColor="Brown"
+                BorderWidth="2"/>
 
             <!--Header text-->
             <VerticalStackLayout

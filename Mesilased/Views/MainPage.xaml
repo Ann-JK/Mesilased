@@ -17,19 +17,35 @@
             Padding="30,0"
             VerticalOptions="Center">
 
-        <Button
+            <Label
+            Margin="60"
+            FontSize="60"
+            Text="MESILASED"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Button
+                FontSize="40"
+                BackgroundColor="Brown"
+                CornerRadius="20"
                 x:Name="Nupp1"
                 Text="Mesilaste liigid Eestis"
                 Clicked="Nupp1Clicked"
                 HorizontalOptions="Center" />
 
         <Button
+                FontSize="40"
+                BackgroundColor="Brown"
+                CornerRadius="20"
                 x:Name="Nupp2"
                 Text="Mesilaste rollid"
                 Clicked="Nupp2Clicked"
                 HorizontalOptions="Center" />
 
         <Button
+                FontSize="40"
+                BackgroundColor="Brown"
+                CornerRadius="20"
                 x:Name="Nupp3"
                 Text="Huvitav fakt"
                 Clicked="Nupp3Clicked"
