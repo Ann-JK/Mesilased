@@ -53,6 +53,7 @@
 	  <None Remove="Resources\Images\halictus.jpg" />
 	  <None Remove="Resources\Images\Hylaeus.jpg" />
 	  <None Remove="Resources\Images\imgback.png" />
+	  <None Remove="Resources\Images\imgback_vana.png" />
 	  <None Remove="Resources\Images\lasio.jpg" />
 	  <None Remove="Resources\Images\megachile.jpg" />
 	  <None Remove="Resources\Images\melitta.jpg" />
@@ -66,6 +67,9 @@
 	  <MauiXaml Update="Views\BeesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+      <MauiXaml Update="Views\FactPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+      </MauiXaml>		
 	</ItemGroup>
 
 	<ItemGroup>

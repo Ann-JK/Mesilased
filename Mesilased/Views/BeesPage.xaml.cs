@@ -12,6 +12,7 @@ public partial class BeesPage : ContentPage
     public BeesPage()
 	{
         InitializeComponent();
+
         BeesCollectionLeft = new ObservableCollection<Bees>
         {
             new Bees { Name = "Meemesilane", HeroImage = "apis.jpg", ScientificName = "Apis Mellifera", 
@@ -137,6 +138,10 @@ public partial class BeesPage : ContentPage
     {
         await Navigation.PushAsync(new BeesDetailsPage(e.CurrentSelection.First() as Bees));
 
+    }
+    private void Esileht(object sender, EventArgs e)
+    {
+        Application.Current.MainPage = new NavigationPage(new MainPage());
     }
 }
 
