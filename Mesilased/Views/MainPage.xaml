@@ -19,13 +19,13 @@
 
             <Label
             Margin="60"
-            FontSize="60"
+            FontSize="50"
             Text="MESILASED"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
             <Button
-                FontSize="40"
+                FontSize="30"
                 BackgroundColor="Brown"
                 CornerRadius="20"
                 x:Name="Nupp1"
@@ -34,7 +34,7 @@
                 HorizontalOptions="Center" />
 
         <Button
-                FontSize="40"
+                FontSize="30"
                 BackgroundColor="Brown"
                 CornerRadius="20"
                 x:Name="Nupp2"
@@ -43,7 +43,7 @@
                 HorizontalOptions="Center" />
 
         <Button
-                FontSize="40"
+                FontSize="30"
                 BackgroundColor="Brown"
                 CornerRadius="20"
                 x:Name="Nupp3"
