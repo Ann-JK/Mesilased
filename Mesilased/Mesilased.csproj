@@ -39,7 +39,6 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -49,7 +48,31 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Models\" />
+	  <None Remove="Resources\Images\andrena.jpg" />
+	  <None Remove="Resources\Images\apis.jpg" />
+	  <None Remove="Resources\Images\halictus.jpg" />
+	  <None Remove="Resources\Images\Hylaeus.jpg" />
+	  <None Remove="Resources\Images\imgback.png" />
+	  <None Remove="Resources\Images\imgback_vana.png" />
+	  <None Remove="Resources\Images\lasio.jpg" />
+	  <None Remove="Resources\Images\megachile.jpg" />
+	  <None Remove="Resources\Images\melitta.jpg" />
+	  <None Remove="Resources\Images\osmia.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\BeesDetailsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BeesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+      <MauiXaml Update="Views\FactPage.xaml">
+			<Generator>MSBuild:Compile</Generator>
+      </MauiXaml>		
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Folder Include="Services\" />
 	</ItemGroup>
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mesilased.Views.FactPage"
+             Title="FactPage">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="2,1">
+                <GradientStop Color="#F9B405" Offset="0.0" />
+                <GradientStop Color="#FFf" Offset="1.0" />
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <VerticalStackLayout Padding="30" BackgroundColor="Orange">
+
+            <ImageButton
+                WidthRequest="60"
+                HeightRequest="60"
+                Source="imgback.png"
+                Grid.Row="0"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Clicked="Esileht"
+                BorderColor="Brown"
+                BorderWidth="2"/>
+
+            <Label
+                Margin="60"
+                FontSize="60"
+                Text="HUVITAV FAKT MESILASTE KOHTA"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+
+            <Label x:Name="label2"
+               Padding="0,60,0,0"
+               FontSize="30"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               Text="{Binding randomFact}"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
