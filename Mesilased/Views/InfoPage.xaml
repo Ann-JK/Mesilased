@@ -23,6 +23,18 @@
 
         <VerticalStackLayout Spacing="20" 
                              Padding="30">
+            <Grid Grid.Row="0">
+                <ImageButton
+                    WidthRequest="60"
+                    HeightRequest="60"
+                    Source="imgback.png"
+                    Grid.Row="0"
+                    HorizontalOptions="Start"
+                    VerticalOptions="Center"
+                    Clicked="BackButton_Clicked"
+                    BorderColor="Brown"
+                    BorderWidth="2"/>
+            </Grid>
             <Grid Grid.Row="1"
                   Margin="5">
                 <Label HorizontalTextAlignment="Center" 

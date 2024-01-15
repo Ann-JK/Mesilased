@@ -16,4 +16,10 @@ public partial class InfoPage : ContentPage
     {
         Launcher.OpenAsync(new Uri("http://www.patreon.com"));
     }
+
+    async void BackButton_Clicked(System.Object sender, System.EventArgs e) 
+    {
+        await Navigation.PopAsync();
+    }
+
 }

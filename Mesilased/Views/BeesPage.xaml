@@ -4,7 +4,8 @@
              x:Class="Mesilased.Views.BeesPage"
              xmlns:models="clr-namespace:Mesilased.Models"
              Title="Bees page">
-    <Grid>
+    <ScrollView>
+        <Grid>
 
         <Grid.Background>
             <LinearGradientBrush StartPoint="0,0" EndPoint="2,1">
@@ -38,7 +39,16 @@
                 BorderColor="Brown"
                 BorderWidth="2"/>
 
-            <!--Header text-->
+            <Button
+                FontSize="20"
+                BackgroundColor="Brown"
+                CornerRadius="50"
+                x:Name="InfoButton"
+                Text="Info"
+                Clicked="InfoButton_Clicked"
+                HorizontalOptions="End" />
+
+                <!--Header text-->
             <VerticalStackLayout
                 Grid.Row="0"
                 Grid.Column="0"
@@ -51,7 +61,7 @@
 
             </VerticalStackLayout>
 
-            <FlexLayout
+                <FlexLayout
                     Direction="Row"
                     JustifyContent="SpaceBetween"
                     AlignItems="Start"
@@ -59,8 +69,8 @@
                     Grid.Row="1"
                     Grid.Column="0">
 
-                <!-- Left Column -->
-                <CollectionView
+                    <!-- Left Column -->
+                    <CollectionView
                         ItemsSource="{Binding BeesCollectionLeft}"
                         SelectionMode="Single"
                         SelectionChanged="Bees_SelectionChanged"
@@ -72,30 +82,30 @@
                         FlexLayout.Grow="1">
 
 
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
                                 Orientation="Vertical"
                                 ItemSpacing="16" />
-                    </CollectionView.ItemsLayout>
+                        </CollectionView.ItemsLayout>
 
 
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate
                                 x:DataType="models:Bees">
-                            <Border
+                                <Border
                                     VerticalOptions="Fill"
                                     WidthRequest="250"
                                     StrokeThickness="0"
                                     Padding="0">
-    
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="150" />
-                                </Border.StrokeShape>
 
-                                <Grid
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="150" />
+                                    </Border.StrokeShape>
+
+                                    <Grid
                                         RowDefinitions="*, Auto"
                                         RowSpacing="1" >
-                                    <Frame
+                                        <Frame
                                         Grid.Row="0"
                                         BackgroundColor="Black"
                                         CornerRadius="75"
@@ -103,30 +113,30 @@
                                         WidthRequest="150"
                                         Padding="0" >
 
-                                        <Image 
+                                            <Image 
                                             Source="{Binding HeroImage}"
                                             Aspect="AspectFill"
                                             VerticalOptions="CenterAndExpand"
                                             HorizontalOptions="CenterAndExpand" />
 
-                                    </Frame>
+                                        </Frame>
 
-                                    <Label
+                                        <Label
                                             Grid.Row="1"
                                             Text="{Binding Name}"
                                             HorizontalTextAlignment="Center"
                                             VerticalTextAlignment="Center" />
 
-                                </Grid>
+                                    </Grid>
 
-                            </Border>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
-                </CollectionView>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
 
-                <!---Right Column-->
+                    <!---Right Column-->
 
-                <CollectionView
+                    <CollectionView
                         ItemsSource="{Binding BeesCollectionRight}"
                         SelectionMode="Single"
                         SelectionChanged="Bees_SelectionChanged"
@@ -137,60 +147,63 @@
                         Margin="5,0,0,0">
 
 
-                    <CollectionView.ItemsLayout>
-                        <LinearItemsLayout
+                        <CollectionView.ItemsLayout>
+                            <LinearItemsLayout
                                     Orientation="Vertical"
                                     ItemSpacing="16" />
-                    </CollectionView.ItemsLayout>
+                        </CollectionView.ItemsLayout>
 
-                    <CollectionView.ItemTemplate>
-                        <DataTemplate
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate
                                     x:DataType="models:Bees">
-                            <Border
+                                <Border
                                 VerticalOptions="Fill"
                                 WidthRequest="250"
                                 StrokeThickness="0"
                                 Padding="0">
 
-                                <Border.StrokeShape>
-                                    <RoundRectangle CornerRadius="150" />
-                                </Border.StrokeShape>
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="150" />
+                                    </Border.StrokeShape>
 
-                                <Grid
+                                    <Grid
                                     RowDefinitions="*, Auto"
                                     RowSpacing="1" >
 
-                                    <Frame
+                                        <Frame
                                         Grid.Row="0"
                                         BackgroundColor="Black"
                                         CornerRadius="75"
                                         HeightRequest="150"
                                         WidthRequest="150"
                                         Padding="0">
-                                        <Image 
+                                            <Image 
                                             Source="{Binding HeroImage}"
                                             Rotation="0"
                                             Aspect="AspectFill"
                                             VerticalOptions="CenterAndExpand"
                                             HorizontalOptions="CenterAndExpand" />
 
-                                    </Frame>
+                                        </Frame>
 
-                                    <Label
+                                        <Label
                                         Grid.Row="1"
                                         Text="{Binding Name}"
                                         HorizontalTextAlignment="Center"
                                         VerticalTextAlignment="Center"/>
-                                </Grid>
+                                    </Grid>
 
-                            </Border>
-                        </DataTemplate>
-                    </CollectionView.ItemTemplate>
+                                </Border>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
 
-                </CollectionView>
-            </FlexLayout>
+                    </CollectionView>
 
-        </Grid>
+                </FlexLayout>
+
+            </Grid>
 
     </Grid>
+    </ScrollView>
+
 </ContentPage>

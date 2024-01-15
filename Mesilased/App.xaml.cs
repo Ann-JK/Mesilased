@@ -10,8 +10,8 @@ using Windows.Graphics;
 public partial class App : Application
 {
 
-    const int WindowWidth = 600;
-    const int WindowHeight = 1000;
+    const int WindowWidth = 800;
+    const int WindowHeight = 1200;
 
 
     public App()
