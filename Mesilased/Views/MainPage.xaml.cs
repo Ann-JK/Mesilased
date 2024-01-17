@@ -20,7 +20,7 @@ public partial class MainPage : ContentPage
     }
     private void Nupp2Clicked(object sender, EventArgs e)
     {
-        Application.Current.MainPage = new NavigationPage(new FactPage());
+        Application.Current.MainPage = new NavigationPage(new BeeSpecimenPage());
     }
     private void Nupp3Clicked(object sender, EventArgs e)
     {
