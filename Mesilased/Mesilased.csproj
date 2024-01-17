@@ -67,6 +67,9 @@
 	  <MauiXaml Update="Views\BeesPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\BeeSpecimenPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
       <MauiXaml Update="Views\FactPage.xaml">
 			<Generator>MSBuild:Compile</Generator>
       </MauiXaml>
