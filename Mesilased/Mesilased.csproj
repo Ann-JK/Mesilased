@@ -50,14 +50,22 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\andrena.jpg" />
 	  <None Remove="Resources\Images\apis.jpg" />
+	  <None Remove="Resources\Images\emamesilane.png" />
+	  <None Remove="Resources\Images\emamesilane_ikoon.png" />
 	  <None Remove="Resources\Images\halictus.jpg" />
 	  <None Remove="Resources\Images\Hylaeus.jpg" />
 	  <None Remove="Resources\Images\imgback.png" />
 	  <None Remove="Resources\Images\imgback_vana.png" />
 	  <None Remove="Resources\Images\lasio.jpg" />
+	  <None Remove="Resources\Images\lesk.png" />
+	  <None Remove="Resources\Images\lesk_ikoon.png" />
 	  <None Remove="Resources\Images\megachile.jpg" />
 	  <None Remove="Resources\Images\melitta.jpg" />
 	  <None Remove="Resources\Images\osmia.jpg" />
+	  <None Remove="Resources\Images\t66mesilane.png" />
+	  <None Remove="Resources\Images\t66mesilane2.png" />
+	  <None Remove="Resources\Images\t66mesilane3.png" />
+	  <None Remove="Resources\Images\t66mesilane_ikoon.png" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -65,6 +73,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\BeesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BeeSpecimenDetailsPages.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\BeeSpecimenPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
       <MauiXaml Update="Views\FactPage.xaml">
