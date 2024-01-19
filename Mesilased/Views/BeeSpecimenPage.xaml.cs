@@ -66,4 +66,9 @@ public partial class BeeSpecimenPage : ContentPage
     {
         Application.Current.MainPage = new NavigationPage(new MainPage());
     }
+
+    private async void InfoButton_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new InfoPage());
+    }
 }
