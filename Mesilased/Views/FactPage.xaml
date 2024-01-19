@@ -27,14 +27,14 @@
 
             <Label
                 Margin="60"
-                FontSize="60"
+                FontSize="40"
                 Text="HUVITAV FAKT MESILASTE KOHTA"
                 VerticalOptions="Center" 
                 HorizontalOptions="Center" />
 
             <Label x:Name="label2"
                Padding="0,60,0,0"
-               FontSize="30"
+               FontSize="20"
                VerticalOptions="Center" 
                HorizontalOptions="Center"
                Text="{Binding randomFact}"/>

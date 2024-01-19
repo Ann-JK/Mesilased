@@ -37,6 +37,15 @@
                     BorderWidth="2"/>
             <!--Header text-->
 
+            <Button
+                FontSize="20"
+                BackgroundColor="Brown"
+                CornerRadius="50"
+                x:Name="InfoButton"
+                Text="Info"
+                Clicked="InfoButton_Clicked"
+    HorizontalOptions="End" />
+
             <VerticalStackLayout
                     Grid.Row="0"
                     Grid.Column="0"
@@ -45,7 +54,7 @@
 
                 <Label
                     Text="Mesilasisendid mesitarus"
-                    FontSize="40"/>
+                    FontSize="30"/>
 
             </VerticalStackLayout>
 
@@ -94,15 +103,15 @@
                                     <Frame
                                         Grid.Row="0"
                                         BackgroundColor="White"
-                                        CornerRadius="100"
+                                        CornerRadius="150"
                                         HeightRequest="150"
                                         WidthRequest="150"
                                         Padding="10" >
 
                                         <Image 
                                             Source="{Binding Icon}"
-                                            Aspect="AspectFit"
-                                            VerticalOptions="CenterAndExpand"
+                                            Aspect="AspectFill"
+                                            VerticalOptions="Center"
                                             HorizontalOptions="CenterAndExpand" />
 
 
@@ -114,8 +123,6 @@
                                         Text="{Binding Name}"
                                         HorizontalTextAlignment="Center"
                                         VerticalTextAlignment="Center" />
-
-
 
 
                                 </Grid>
